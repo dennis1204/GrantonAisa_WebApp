@@ -1,0 +1,6 @@
+{
+  "name": "C-Finance Loan Platform",
+  "description": "Professional loan application platform featuring a dynamic loan calculator and secure application form.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
