@@ -19,7 +19,7 @@ export function Header({ onOpenEnquiry }: HeaderProps) {
           
           {/* Logo & Brand Name */}
           <a href="#" className="group flex items-center py-2">
-            <BrandLogo variant="light" size="md" />
+            <BrandLogo size="md" showText={true} symbolOnly={false} />
           </a>
 
           {/* Desktop Navigation */}

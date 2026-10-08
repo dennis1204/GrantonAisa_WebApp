@@ -93,10 +93,10 @@ export function ApplicationForm({ onOpenLegal }: ApplicationFormProps) {
     <section id="apply" className="py-24 bg-slate-50 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold mb-4 border border-emerald-100">
+          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold mb-4 border border-emerald-100">
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>256-bit SSL Encrypted · 香港持牌放債人</span>
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
             {t.form.heading}
           </h2>

@@ -77,7 +77,7 @@ export function Footer({ onOpenEnquiry, onOpenLegal }: FooterProps) {
               {t.footer.servicesTitle}
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
-              <li>
+              {/* <li>
                 <a href="#services" className="hover:text-emerald-400 transition-colors">
                   私人貸款 (Personal Loan)
                 </a>
@@ -96,7 +96,7 @@ export function Footer({ onOpenEnquiry, onOpenLegal }: FooterProps) {
                 <a href="#services" className="hover:text-emerald-400 transition-colors">
                   中小企商業貸款 (SME Loan)
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           
@@ -133,7 +133,7 @@ export function Footer({ onOpenEnquiry, onOpenLegal }: FooterProps) {
                   {t.footer.disclaimer}
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button 
                   type="button"
                   onClick={() => onOpenLegal?.('privacy')} 
@@ -150,7 +150,7 @@ export function Footer({ onOpenEnquiry, onOpenLegal }: FooterProps) {
                 >
                   {t.footer.termsOfService}
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
 

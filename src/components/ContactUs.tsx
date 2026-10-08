@@ -95,12 +95,12 @@ export function ContactUs() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold mb-4 border border-emerald-200">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold mb-4 border border-emerald-200">
             <Phone className="w-3.5 h-3.5 text-emerald-600" />
             <span>{isZh ? '聯絡我們 ｜ Contact Us' : 'Contact Us ｜ 聯絡我們'}</span>
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            {isZh ? '聯絡盈滙亞洲與在線查詢' : 'Contact Granton Asia & Online Enquiry'}
+            {isZh ? '聯絡我們 ' : 'Contact Us'}
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
             {isZh 
@@ -204,7 +204,7 @@ export function ContactUs() {
             </div>
 
             {/* Quick action buttons */}
-            <div className="pt-4 border-t border-slate-100 grid grid-cols-2 gap-3">
+            {/* <div className="pt-4 border-t border-slate-100 grid grid-cols-2 gap-3">
               <a 
                 href="https://wa.me/85239968798"
                 target="_blank"
@@ -221,7 +221,7 @@ export function ContactUs() {
                 <Phone className="w-3.5 h-3.5 text-slate-600" />
                 <span>致電專員</span>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column (7 cols): Interactive Enquiry Form */}
@@ -243,10 +243,10 @@ export function ContactUs() {
                         : 'Please enter your name, email, and enquiry message. We will respond promptly.'}
                     </p>
                   </div>
-                  <div className="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-100">
+                  {/* <div className="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-100">
                     <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
                     <span>{isZh ? '24小時內回覆' : '24h Response'}</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 {errorMessage && (
@@ -269,7 +269,7 @@ export function ContactUs() {
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        placeholder={isZh ? '例如：陳先生 / Mr. Chan' : 'e.g. Mr. Chan'}
+                        // placeholder={isZh ? '例如：陳先生 / Mr. Chan' : 'e.g. Mr. Chan'}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600 text-sm text-slate-900 transition-all bg-white"
                       />
                     </div>
@@ -284,7 +284,7 @@ export function ContactUs() {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="your.email@example.com"
+                        // placeholder="your.email@example.com"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600 text-sm text-slate-900 transition-all bg-white"
                       />
                     </div>
@@ -299,7 +299,7 @@ export function ContactUs() {
                       type="tel"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      placeholder="+852 9876 5432"
+                      // placeholder="+852 9876 5432"
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600 text-sm text-slate-900 transition-all bg-white"
                     />
                   </div>
@@ -310,18 +310,18 @@ export function ContactUs() {
                       <label className="block text-xs font-bold text-slate-700">
                         {isZh ? '查詢內容' : 'Enquiry Content / Message'} <span className="text-rose-500">*</span>
                       </label>
-                      <span className="text-[11px] text-slate-400">
+                      {/* <span className="text-[11px] text-slate-400">
                         {isZh ? '接收信箱：sales@grantonasia.com.hk' : 'To: sales@grantonasia.com.hk'}
-                      </span>
+                      </span> */}
                     </div>
                     <textarea
                       required
                       rows={5}
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder={isZh 
-                        ? '請輸入您想了解的按揭貸款、物業融資或一般信貸問題，例如：物業估價、貸款期數、還款責任或利率安排等...'
-                        : 'Please describe your mortgage or financing enquiry in detail, including property type, desired financing amount, or specific questions...'}
+                      // placeholder={isZh 
+                      //   ? '請輸入您想了解的按揭貸款、物業融資或一般信貸問題，例如：物業估價、貸款期數、還款責任或利率安排等...'
+                      //   : 'Please describe your mortgage or financing enquiry in detail, including property type, desired financing amount, or specific questions...'}
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600 text-sm text-slate-900 transition-all bg-white resize-none"
                     />
                   </div>
