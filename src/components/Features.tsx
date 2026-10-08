@@ -2,27 +2,28 @@ import { Banknote, Clock, FileText, Zap } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export function Features() {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
+  const isZh = language === 'zh-HK';
 
   const featureItems = [
     {
-      name: t.features.items.fastApprovalTitle,
-      description: t.features.items.fastApprovalDesc,
+      name: isZh ? '極速審批' : 'Fast Approval',
+      description: isZh ? '最快即日完成審批並安排放款' : 'Fast-track approval with same-day disbursement options.',
       icon: Zap,
     },
     {
-      name: t.features.items.flexibleTermsTitle,
-      description: t.features.items.flexibleTermsDesc,
+      name: isZh ? '彈性還款期' : 'Flexible Terms',
+      description: isZh ? '提供 6 至 60 個月彈性分期方案' : 'Tailored repayment periods ranging from 6 to 60 months.',
       icon: Clock,
     },
     {
-      name: t.features.items.lowRatesTitle,
-      description: t.features.items.lowRatesDesc,
+      name: isZh ? '特惠低息' : 'Competitive Rates',
+      description: isZh ? '透明收費機制，絕無任何隱藏附加費' : 'Transparent pricing with no hidden handling charges.',
       icon: Banknote,
     },
     {
-      name: t.features.items.simpleProcessTitle,
-      description: t.features.items.simpleProcessDesc,
+      name: isZh ? '手續簡易' : 'Simple Process',
+      description: isZh ? '網上即時遞交，專人全程貼心跟進' : 'Apply online with minimal documents and dedicated advisory.',
       icon: FileText,
     },
   ];
@@ -32,10 +33,10 @@ export function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
-            {t.features.heading}
+            {isZh ? '我們的核心優勢' : 'Our Core Advantages'}
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            {t.features.subtitle}
+            {isZh ? '以專業誠信，為您量身定制最合適的財務信貸方案' : 'Professional, transparent credit solutions tailored to your financial needs.'}
           </p>
         </div>
 
