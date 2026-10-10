@@ -44,7 +44,7 @@ export function BrandLogo({
     <div className={`inline-flex items-center gap-3 select-none ${className}`}>
       {/* Precision Vector Emblem (Granton Asia Gold Emblem) */}
       <div className={`relative shrink-0 ${iconDimensions} flex items-center justify-center group-hover:scale-105 transition-transform duration-200`}>
-             <img src="../../public/logo.png" alt="Granton Asia Logo" className="w-10 h-10 mr-3" />
+             <img src="/logo.png" alt="Granton Asia Logo" className="w-10 h-10 mr-3" />
       </div>
 
       {/* Typography Section */}

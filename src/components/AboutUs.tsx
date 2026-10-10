@@ -77,39 +77,39 @@ export function AboutUs() {
             {/* Performance & Trust Stats */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
               <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 text-white shadow-md">
-                <p className="text-3xl font-extrabold text-emerald-400 font-mono tracking-tight mb-1">
+                {/* <p className="text-3xl font-extrabold text-emerald-400 font-mono tracking-tight mb-1">
                   {t.about.stats.stat1Number}
                 </p>
                 <p className="text-xs text-slate-300 font-medium">
                   {t.about.stats.stat1Label}
-                </p>
+                </p> */}
               </div>
 
               <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 text-white shadow-md">
-                <p className="text-3xl font-extrabold text-emerald-400 font-mono tracking-tight mb-1">
+                {/* <p className="text-3xl font-extrabold text-emerald-400 font-mono tracking-tight mb-1">
                   {t.about.stats.stat2Number}
                 </p>
                 <p className="text-xs text-slate-300 font-medium">
                   {t.about.stats.stat2Label}
-                </p>
+                </p> */}
               </div>
 
               <div className="p-5 rounded-2xl bg-gradient-to-br from-emerald-700 to-teal-800 text-white shadow-md">
-                <p className="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight mb-1">
+                {/* <p className="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight mb-1">
                   {t.about.stats.stat3Number}
                 </p>
                 <p className="text-xs text-emerald-100 font-medium">
                   {t.about.stats.stat3Label}
-                </p>
+                </p> */}
               </div>
 
               <div className="p-5 rounded-2xl bg-gradient-to-br from-emerald-700 to-teal-800 text-white shadow-md">
-                <p className="text-3xl font-extrabold text-white font-mono tracking-tight mb-1">
+                {/* <p className="text-3xl font-extrabold text-white font-mono tracking-tight mb-1">
                   {t.about.stats.stat4Number}
                 </p>
                 <p className="text-xs text-emerald-100 font-medium">
                   {t.about.stats.stat4Label}
-                </p>
+                </p> */}
               </div>
             </div>
 
